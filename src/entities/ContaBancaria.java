@@ -1,10 +1,32 @@
 package entities;
 import java.util.Random;
+import java.util.Scanner;
+
 public class ContaBancaria {
     public int numero;
     public String agencia;
     public String nomeCliente;
     public double saldo;
+    private Scanner sc = new Scanner(System.in);
+
+
+    public void criarConta(){
+            System.out.println("Insira seu nome completo: ");
+            nomeCliente = sc.nextLine();
+            saldo = GerarSaldo();
+            agencia = gerarNumeroAgencia();
+            numero = gerarNumeroConta();
+            System.out.printf("Bem vindo ao Banco! Sr(a) %s, seu numero de conta eh %d, sua agencia eh %s e foi gerado um saldo novo para uso, de  R$%.2f\n", nomeCliente, numero, agencia, saldo);
+    }
+
+    public String consultaConta(){
+        System.out.println("Insira sua agencia e seu numero da conta por favor: ");
+        System.out.print("Agencia: ");
+        agencia = sc.nextLine();
+        System.out.print("Numero da Conta: ");
+        numero = sc.nextInt();
+        return System.out.printf("Olá %s! Voce eh nosso cliente, Sua agência é [%s] e conta [%d] e seu saldo [%.2f] já está disponível para saque.\n", nomeCliente, agencia, numero, saldo).toString();
+    }
 
     public double GerarSaldo(){
         Random random = new Random();
