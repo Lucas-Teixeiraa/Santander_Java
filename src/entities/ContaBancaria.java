@@ -46,7 +46,7 @@ public class ContaBancaria {
             digitos[i] = random.nextInt(10);
         }
 
-
+//
         int numeroConta = 0;
         for (int i = digitos.length - 1; i >= 0; i--) {
             numeroConta += digitos[i] * (int) Math.pow(10, i);
