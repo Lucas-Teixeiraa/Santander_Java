@@ -1,5 +1,5 @@
-## **O que foi feito:**
-
+# Desafios do bootcamp Santander
+## Desafio 1
 O código principal está encapsulado na classe ContaBancaria.
 
   ***Atributos:***
@@ -46,3 +46,13 @@ O método criarConta() gerencia o fluxo de criação da conta:
    saldo não implementada).
  - **Caso padrão:**
                Exibe uma mensagem de erro indicando uma opção inválida.
+
+## Desafio 2 
+
+Desafio feito com base nas aulas apresentadas. O diferencial foi tentar modularizar
+o codigo, deixando o metodo main realizando operacoes basicas, e importando a classe que ira
+realizar todo o processo do codigo.
+## Desafio 3
+Desafio proposto para fazer um metodo que conta os numero dentro de um limite de valores 
+determinados a partir da entrada, sendo o primeiro numero necessario maior que o segundo.
+Fiz o mesmo processo do Desafio 2, onde priorizei realizar o minimo de acoes na Main.
