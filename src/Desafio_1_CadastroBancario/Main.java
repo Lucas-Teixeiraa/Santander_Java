@@ -1,4 +1,4 @@
-package Desafio_1;
+package Desafio_1_CadastroBancario;
 
 import java.util.Scanner;
 import entities.ContaBancaria;
