@@ -11,7 +11,6 @@ public class Contador {
             for(i = 0; i <= contagem; i++) {
                 System.out.printf("O numero contado e: %d\n", i);
             }
-
         }
         else{
             throw new ParametrosInvalidosException();
